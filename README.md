@@ -20,8 +20,9 @@
   <a href="#examples">
     <img src="https://img.shields.io/badge/examples-🚀-green?style=for-the-badge" alt="Examples">
   </a> 
-  <a href="#license">
-    <img src="https://img.shields.io/badge/license-📜-red?style=for-the-badge" alt="License">
+ <a href="#license" style="text-decoration: none; margin: 0 10px;">
+    <img src="https://img.shields.io/badge/license-📜-red?style=for-the-badge" alt="License" style="vertical-align: middle;">
+  </a>
     <a href="#usage" style="text-decoration: none; margin: 0 10px;">
     <img src="https://img.shields.io/badge/using-🛠️-purple?style=for-the-badge" alt="Using" style="vertical-align: middle;">
   </a>
