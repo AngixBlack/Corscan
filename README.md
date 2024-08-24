@@ -70,7 +70,8 @@ Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (
   <code>--filter</code> Filter results to show only vulnerable entries<br>
   <code>-h, --help</code> Show this help message and exit
 </p>
-## 🚀 Examples
+
+## 🚀Examples
 
 Here are some examples of how to use the CORS Header Checker Tool with the `crsn` command:
 
