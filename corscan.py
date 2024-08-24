@@ -181,7 +181,7 @@ def main():
         sys.exit(0)
 
     if not args.url and not args.file:
-        print_error("Please provide a URL with -u or a file with -f.")
+        print_error("Please provide a URL with -u or a file with -f - For help use -h")
         sys.exit(1)
 
     try:
