@@ -70,7 +70,36 @@ Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (
   <code>--filter</code> Filter results to show only vulnerable entries<br>
   <code>-h, --help</code> Show this help message and exit
 </p>
+## 🚀 Examples
 
+Here are some examples of how to use the CORS Header Checker Tool with the `crsn` command:
 
+Check a single URL:
+  ```bash
+   crsn -u https://example.com
+   ```
+Check a list of URLs from a file:
+```bash
+crsn -f urls.txt
+```
+Use a custom origin for CORS check:
+```bash
+crsn -u https://example.com -r https://myorigin.com
+```
 
-
+Use multiple threads for faster scanning:
+```bash
+crsn -u https://example.com -t 50
+```
+Save the output to a file:
+```bash
+crsn -u https://example.com -o result.txt
+```
+Output in JSON format:
+```bash
+crsn -u https://example.com --format json
+```
+Filter results to show only vulnerable entries:
+```bash
+crsn -u https://example.com --filter
+```
