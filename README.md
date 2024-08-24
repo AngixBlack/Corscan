@@ -50,8 +50,8 @@ Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (
 1. Clone the repository:
    ```bash
     
-    git clone https://github.com/Angix-Black/corscan.git
-    cd corscan
+    git clone https://github.com/Angix-Black/Corscan.git
+    cd Corscan
     python3 setup.py install
 
    ```
