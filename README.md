@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.webp" alt="Croscan Logo" width="200" style="border-radius: 10px;">
+  <img src="logo/logo.webp" alt="Croscan Logo" width="200" style="border-radius: 10px;">
 </p>
 
 <h1 align="center">
