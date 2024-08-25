@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  Croscan
+  Corscan
   <br>
 <sub><i>Advanced CORS Vulnerability Detection Tool</i></sub><br>
 </h1>
