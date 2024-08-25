@@ -73,7 +73,7 @@ Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (
 
 ## 🚀Examples
 
-Here are some examples of how to use the CORS Header Checker Tool with the `crsn` command:
+Here are some examples of how to use the Croscan Tool with the `crsn` command:
 
 Check a single URL:
   ```bash
