@@ -6,10 +6,8 @@ import json
 import sys
 from urllib.parse import urlparse
 
-
 def print_logo():
     logo = """
-    
  .d8888b.                                                                      
 d88P  Y88b                                                                     
 888    888                                                                     
@@ -22,7 +20,6 @@ Y88b  d88P Y88..88P 888          X88            X88 Y88b.    888  888 888  888
                           Coded By Angix Black
 """
     print(f"{Fore.GREEN}{logo}{Style.RESET_ALL}")
-
 
 def print_error(message, show_error=True):
     if show_error:
@@ -92,10 +89,15 @@ def check_cors(url, origin, output_file=None, output_format='text', filter_vulne
         }
 
         bypass_results = attempt_bypass(url)
+        bypass_success = any(result == True for result in bypass_results.values())
 
         # Filter results if needed
-        if filter_vulnerable and not result['vulnerable']:
+        if filter_vulnerable and not (result['vulnerable'] or bypass_success):
             return
+
+        # Filter bypass results if needed
+        if filter_vulnerable:
+            bypass_results = {origin: result for origin, result in bypass_results.items() if result == True}
 
         if output_format == 'json':
             result['bypass_attempts'] = bypass_results
@@ -140,7 +142,6 @@ def check_cors(url, origin, output_file=None, output_format='text', filter_vulne
     except requests.RequestException as e:
         print_error(f"Could not connect to {url}. The URL may be invalid or unreachable.", not filter_vulnerable)
 
-
 def print_help():
     help_text = f"""
 {Fore.GREEN}Usage:{Style.RESET_ALL}
@@ -181,22 +182,23 @@ def main():
         sys.exit(0)
 
     if not args.url and not args.file:
-        print_error("Please provide a URL with -u or a file with -f - For help use -h")
+        print_error("Please provide a URL with -u or a file with -f or -h for help.")
         sys.exit(1)
 
     try:
         if args.url:
             check_cors(args.url, origin=args.origin, output_file=args.output, output_format=args.format, filter_vulnerable=args.filter)
-        elif args.file:
-            with open(args.file, 'r') as file:
-                urls = [url.strip() for url in file.readlines()]
 
-                with ThreadPoolExecutor(max_workers=args.threads) as executor:
-                    futures = [executor.submit(check_cors, u, args.origin, args.output, args.format, args.filter) for u in urls]
-                    for future in as_completed(futures):
-                        future.result()
-    except KeyboardInterrupt:
-        print(f"{Fore.RED}Scan interrupted by user. Exiting...{Style.RESET_ALL}")
+        if args.file:
+            with open(args.file, 'r') as f:
+                urls = [line.strip() for line in f if line.strip()]
+            with ThreadPoolExecutor(max_workers=args.threads) as executor:
+                futures = [executor.submit(check_cors, url, origin=args.origin, output_file=args.output, output_format=args.format, filter_vulnerable=args.filter) for url in urls]
+                for future in as_completed(futures):
+                    future.result()
+    
+    except Exception as e:
+        print_error(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
     main()
