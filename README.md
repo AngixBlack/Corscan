@@ -83,25 +83,26 @@ Check a list of URLs from a file:
 crsn -f urls.txt
 ```
 Use a custom origin for CORS check:
+
 ```bash
 crsn -u https://example.com -r https://myorigin.com
 ```
 
 Use multiple threads for faster scanning:
 ```bash
-crsn -u https://example.com -t 50
+crsn -f urls.txt  -t 50
 ```
 Save the output to a file:
 ```bash
-crsn -u https://example.com -o result.txt
+crsn -f urls.txt  -o result.txt
 ```
 Output in JSON format:
 ```bash
-crsn -u https://example.com --format json
+crsn -f urls.txt  --format json
 ```
 Filter results to show only vulnerable entries:
 ```bash
-crsn -u https://example.com --filter
+crsn -f urls.txt --filter
 ```
   <img src="https://github.com/Angix-Black/Corscan/raw/main/logo/corscan.png" alt="CORS Tool Logo" style="width: 1000px; height: auto;">
 
