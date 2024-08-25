@@ -5,7 +5,7 @@
 <h1 align="center">
   Croscan
   <br>
-  <sub><i>Advanced CORS Vulnerability Detection Tool</i></sub>
+<sub><i>Advanced CORS Vulnerability Detection Tool</i></sub><br>
 </h1>
 
 <p align="center">
@@ -29,7 +29,6 @@
   </a>
 </p>
 
----
 
 ## About
 Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (CORS) headers for potential vulnerabilities. It supports single URL checks and batch processing from files.
@@ -104,3 +103,5 @@ Filter results to show only vulnerable entries:
 ```bash
 crsn -u https://example.com --filter
 ```
+  <img src="https://github.com/Angix-Black/Corscan/raw/main/logo/corscan.png" alt="CORS Tool Logo" style="width: 1000px; height: auto;">
+
