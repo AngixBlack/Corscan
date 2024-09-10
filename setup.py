@@ -15,7 +15,7 @@ setup(
         ],
     },
     author='Angix Black',
-    description='A tool to scan CORS configurations.',
+    description='Advanced CORS Header Checker Tool with Vulnerability Detection and Bypass Attempts',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/Angix-Black/Corscan',
