@@ -9,10 +9,6 @@
 </h1>
 
 <p align="center">
-  <strong>By Angix Black</strong>
-</p>
-
-<p align="center">
   <a href="#installation">
     <img src="https://img.shields.io/badge/installation-⚙️-blue?style=for-the-badge&logo=python" alt="Installation">
   </a> 
@@ -20,14 +16,20 @@
   <a href="#examples">
     <img src="https://img.shields.io/badge/examples-🚀-green?style=for-the-badge" alt="Examples">
   </a> 
- <a href="https://github.com/Angix-Black/Corscan?tab=MIT-1-ov-file" style="text-decoration: none; margin: 0 10px;">
+
+  <a href="https://github.com/Angix-Black/Corscan?tab=MIT-1-ov-file" style="text-decoration: none; margin: 0 10px;">
     <img src="https://img.shields.io/badge/license-📜-red?style=for-the-badge" alt="License" style="vertical-align: middle;">
   </a>
-    <a href="#usage" style="text-decoration: none; margin: 0 10px;">
+
+  <a href="#usage" style="text-decoration: none; margin: 0 10px;">
     <img src="https://img.shields.io/badge/using-🛠️-purple?style=for-the-badge" alt="Using" style="vertical-align: middle;">
   </a>
+
+  <a href="https://youtu.be/BQG2nI7Y5s8" target="_blank">
+    <img src="https://img.shields.io/badge/watch_video-🎥-orange?style=for-the-badge" alt="Watch Video">
   </a>
 </p>
+
 
 
 ## About
