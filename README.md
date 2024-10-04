@@ -47,6 +47,9 @@ Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (
   <li>Save output to a specified file.</li>
 </ul>
 
+## Disclaimer
+ This tool is for ethical hacking, legal, and educational use only. Any illegal use is strictly prohibited.
+
 ## Installation
  Clone the repository:
    ```bash
