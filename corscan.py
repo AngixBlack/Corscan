@@ -20,9 +20,9 @@ def print_logo():
          Y88b  d88P Y88..88P 888          X88            X88 Y88b.    888  888 888  888 
           "Y8888P"   "Y88P"  888      88888P'        88888P'  "Y8888P "Y888888 888  888                                                                                                                                   
 
-                              Coded By \033[96mAngix Black\033[0m 
+                                                 Coded By \033[96mAngix Black\033[0m 
 
-            \033[31mDISCLAIMER: This tool is for legal and educational use only.\033[0m            
+     \033[31mDISCLAIMER: This tool is for ethical hacking, legal, and educational use only. Any illegal use is strictly prohibited.\033[0m            
     """
 
     print(f"{Fore.GREEN}{logo}{Style.RESET_ALL}")
