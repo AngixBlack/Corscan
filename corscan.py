@@ -16,7 +16,6 @@ def print_logo():
     ╚═══════════════════════════════════════════════════╝{Style.RESET_ALL}
 
     {Fore.RED}                               DISCLAIMER
-
          This tool is for ethical hacking,legal and educational use only. 
                    Any illegal use is strictly prohibited.{Style.RESET_ALL}
     """
