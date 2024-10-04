@@ -10,22 +10,18 @@ from colorama import Fore, Style
 
 
 def print_logo():
-    logo = """
-           .d8888b.                                                                      
-         d88P  Y88b                                                                     
-         888    888                                                                     
-         888         .d88b.  888d888 .d8888b        .d8888b   .d8888b  8888b.  88888b.  
-         888        d88""88b 888P"   88K            88K      d88P"        "88b 888 "88b 
-         888    888 888  888 888     "Y8888b.       "Y8888b. 888      .d888888 888  888 
-         Y88b  d88P Y88..88P 888          X88            X88 Y88b.    888  888 888  888 
-          "Y8888P"   "Y88P"  888      88888P'        88888P'  "Y8888P "Y888888 888  888                                                                                                                                   
+    logo = f"""
+    {Fore.LIGHTCYAN_EX}╔═════════════════[{Fore.CYAN} C O R S C A N {Fore.LIGHTCYAN_EX}]═════════════════╗
+    {Fore.LIGHTCYAN_EX}║{Fore.YELLOW}            Developed By: Angix Black              {Fore.LIGHTCYAN_EX}║
+    ╚═══════════════════════════════════════════════════╝{Style.RESET_ALL}
 
-                                                 Coded By \033[96mAngix Black\033[0m 
+    {Fore.RED}                               DISCLAIMER
 
-     \033[31mDISCLAIMER: This tool is for ethical hacking, legal, and educational use only. Any illegal use is strictly prohibited.\033[0m            
+         This tool is for ethical hacking,legal and educational use only. 
+                   Any illegal use is strictly prohibited.{Style.RESET_ALL}
     """
-
-    print(f"{Fore.GREEN}{logo}{Style.RESET_ALL}")
+    
+    print(logo)
  
 
 def print_error(message, show_error=True):
