@@ -7,25 +7,26 @@ import sys
 from urllib.parse import urlparse
 
 def print_logo():
-logo = """
- .d8888b.                                                                      
-d88P  Y88b                                                                     
-888    888                                                                     
-888         .d88b.  888d888 .d8888b        .d8888b   .d8888b  8888b.  88888b.  
-888        d88""88b 888P"   88K            88K      d88P"        "88b 888 "88b 
-888    888 888  888 888     "Y8888b.       "Y8888b. 888      .d888888 888  888 
-Y88b  d88P Y88..88P 888          X88            X88 Y88b.    888  888 888  888 
- "Y8888P"   "Y88P"  888      88888P'        88888P'  "Y8888P "Y888888 888  888                                                                            
-                                                                            
-                       Coded By \033[96mAngix Black\033[0m
-                          
-                          \033[31mDISCLAIMER\033[0m
-                          
-              \033[31mThis tool is for educational purposes only.\033[0m
-              \033[31mThe creator does not condone illegal use.\033[0m
-              \033[31mUse responsibly and within legal boundaries.\033[0m
-                        
-"""
+ logo = """
+ 
+          .d8888b.                                                                      
+         d88P  Y88b                                                                     
+         888    888                                                                     
+         888         .d88b.  888d888 .d8888b        .d8888b   .d8888b  8888b.  88888b.  
+         888        d88""88b 888P"   88K            88K      d88P"        "88b 888 "88b 
+         888    888 888  888 888     "Y8888b.       "Y8888b. 888      .d888888 888  888 
+         Y88b  d88P Y88..88P 888          X88            X88 Y88b.    888  888 888  888 
+          "Y8888P"   "Y88P"  888      88888P'        88888P'  "Y8888P "Y888888 888  888                                                                            
+                                                                                     
+                                Coded By \033[96mAngix Black\033[0m
+                                   
+                                   \033[31mDISCLAIMER\033[0m
+                                   
+                       \033[31mThis tool is for educational purposes only.\033[0m
+                       \033[31mThe creator does not condone illegal use.\033[0m
+                       \033[31mUse responsibly and within legal boundaries.\033[0m
+                                 
+   """
 
     print(f"{Fore.GREEN}{logo}{Style.RESET_ALL}")
 
