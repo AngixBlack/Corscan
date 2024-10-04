@@ -34,6 +34,9 @@
 
 ## About
 Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (CORS) headers for potential vulnerabilities. It supports single URL checks and batch processing from files.
+## Disclaimer
+ This tool is for ethical hacking, legal, and educational use only. Any illegal use is strictly prohibited.
+
 
 <h2 id="features" style="text-align: center;">🌟 Features</h2>
 <ul style="text-align: center; font-size: 14px; list-style-type: none; padding: 0;">
@@ -47,8 +50,6 @@ Corscan is a tool designed to inspect and assess Cross-Origin Resource Sharing (
   <li>Save output to a specified file.</li>
 </ul>
 
-## Disclaimer
- This tool is for ethical hacking, legal, and educational use only. Any illegal use is strictly prohibited.
 
 ## Installation
  Clone the repository:
