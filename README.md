@@ -110,5 +110,5 @@ Filter results to show only vulnerable entries:
 ```bash
 crsn -f urls.txt --filter
 ```
-  <img src="https://github.com/Angix-Black/Corscan/raw/main/logo/corscan.png" alt="CORS Tool Logo" style="width: 1000px; height: auto;">
+
 
