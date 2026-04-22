@@ -72,11 +72,7 @@ cd Corscan
 python setup.py install
 ```
 
-### With pip
-
-```bash
-pip install corscan
-```
+ 
 
 ### Verify
 
