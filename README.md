@@ -46,6 +46,7 @@ You are responsible for having explicit permission to test any target.
 - Optional bypass testing with custom origins
 - Optional HTTP methods testing
 - Optional security headers analysis
+- Optional path discovery for single and file scans (common + custom paths)
 - Advanced result filtering (severity, vulnerable-only, URL pattern)
 - Flexible output and export options:
   - Console output (text/json)
@@ -100,6 +101,8 @@ corscan [options]
 |---|---|---|
 | -u, --url URL | Scan a single URL | - |
 | -f, --file FILE | Scan URLs from file (one URL per line) | - |
+| --discover-paths | Expand URL targets to scan common paths on same host | false |
+| --paths-file FILE | Add custom discovery paths (one path per line) | - |
 | -r, --origin ORIGIN | Custom Origin header | https://evil.com |
 | -t, --threads NUM | Number of threads for batch scan | 10 |
 | --timeout SECONDS | Request timeout | 5 |
@@ -161,37 +164,55 @@ corscan -u https://example.com
 corscan -f urls.txt
 ```
 
-### 3) Fast scan (skip bypass)
+### 3) Single target with path discovery
+
+```bash
+corscan -u https://example.com --discover-paths
+```
+
+### 4) Single target with custom path list
+
+```bash
+corscan -u https://example.com --discover-paths --paths-file paths.txt
+```
+
+### 5) File scan with path discovery
+
+```bash
+corscan -f urls.txt --discover-paths
+```
+
+### 6) Fast scan (skip bypass)
 
 ```bash
 corscan -f urls.txt --no-bypass -t 50
 ```
 
-### 4) Vulnerable-only JSON output
+### 7) Vulnerable-only JSON output
 
 ```bash
 corscan -f urls.txt --filter-vulnerable --format json
 ```
 
-### 5) Full export package
+### 8) Full export package
 
 ```bash
 corscan -f urls.txt --csv results.csv --json results.json --html report.html
 ```
 
-### 6) Method test + header analysis
+### 9) Method test + header analysis
 
 ```bash
 corscan -f urls.txt --test-methods --analyze-headers
 ```
 
-### 7) Severity-focused scan
+### 10) Severity-focused scan
 
 ```bash
 corscan -f urls.txt --filter-severity high
 ```
 
-### 8) Through proxy
+### 11) Through proxy
 
 ```bash
 corscan -f urls.txt --proxy http://127.0.0.1:8080
